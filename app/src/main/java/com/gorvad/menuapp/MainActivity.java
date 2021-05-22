@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -32,11 +33,12 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item)
     {
         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+        Intent openMapsPage = new Intent(getApplicationContext(), OpenMapsPage.class);
 
         switch (item.getItemId())
         {
-            case R.id.menuitem1:
-                Toast.makeText(this, "Root item was selected", Toast.LENGTH_SHORT).show();
+            case R.id.googlemapspage:
+                startActivity(openMapsPage);
                 return true;
             case R.id.mennonite1:
                 intent.putExtra("url", "google.com");

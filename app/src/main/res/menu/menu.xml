@@ -7,8 +7,8 @@
         android:title="Меню"
         app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/menuitem1"
-        android:title="Показать Toast"
+    <item android:id="@+id/googlemapspage"
+        android:title="Открыть Maps"
         app:showAsAction="never" />
 
     <item android:id="@+id/menuitem2"
